@@ -176,6 +176,32 @@ body.dark-mode .icon-box-blue h4.title a,body.dark-mode .icon-box-pink h4.title 
 Side Icons Section start
 ---------------------------------------------*/
 
+
+/* Side Icons in Mobile View  */
+
+.footer-icons {
+  display: none; /* Hide the icons by default */
+}
+
+/* Media query for mobile view */
+@media only screen and (max-width: 768px) {
+.elementor-widget-container,.elementor-widget-containe{
+  display: none;
+}
+  .footer-icons {
+      display: flex;
+      justify-content: space-between; /* Change alignment for smaller screens */
+      align-items: center;
+      width: 300px;
+      padding: 10px;
+      background-color: rgb(13, 39, 53); /* Optional: Add background color to the footer */
+  }
+  .footer-icons a {
+      color: #ffffff;
+      font-size: 24px;
+  }
+}
+
 /* CSS to change font color of A+ */
 .custom-font-color {
   color: rgb(0, 0, 0); /* Change this to the desired font color */
